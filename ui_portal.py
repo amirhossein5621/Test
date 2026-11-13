@@ -431,7 +431,14 @@ body:before{background:radial-gradient(50% 40% at 90% 0%,rgba(216,181,103,.22),t
 .hero{border-color:rgba(216,181,103,.28);background:linear-gradient(135deg,rgba(216,181,103,.14),rgba(8,24,27,.9) 48%,rgba(74,219,208,.13))}
 body[data-theme=light] .hero{background:linear-gradient(135deg,rgba(216,181,103,.12),rgba(255,255,250,.94) 50%,rgba(74,219,208,.12))}
 .hero:before{background:conic-gradient(from var(--ang,0deg),transparent 0 72%,#d6ad59,#4adbd0,transparent)}
-.who h1{background:linear-gradient(90deg,#fff5d8 0,#d6ad59 40%,#4adbd0 75%,#fff5d8 100%)}
+.who h1{
+background:linear-gradient(90deg,#fff5d8 0,#d6ad59 40%,#4adbd0 75%,#fff5d8 100%);
+background-size:250% 100%;
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+color:transparent;
+}
 .av{background:linear-gradient(135deg,#d6ad59,#fff0c4 52%,#4adbd0);color:#092023;box-shadow:0 12px 26px -10px rgba(74,219,208,.4)}
 .cp,.app button{background:linear-gradient(105deg,#b88937,#e5c77e 48%,#39c9c1);color:#071719}
 .bar i{background:linear-gradient(90deg,#c99d4b,#e6ca83,#4adbd0)}
